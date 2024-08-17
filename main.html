@@ -9,7 +9,7 @@
             margin: 0;
             padding: 0;
         }
-        .container{
+        #grid{
             padding: 10px;
             display: grid;
             grid-template-columns: repeat(4, 242.5px);
@@ -54,39 +54,31 @@
             grid-column-end: 5;
         }
 
-        
-		.item-7{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end: 6;
-}
+        .item-7{
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
 
-.item-8{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 5;
-    grid-row-end: 6;
-}
+        .item-8{
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
 
-.item-9{
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 5;
-    grid-row-end: 6;
-}
+        .item-9{
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
 
-.item-10{
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 6;
-    grid-row-end: 7;
-}
+        .item-10{
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
 
+		
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="grid">
         <div class="item item-1">1</div>
         <div class="item item-2">2</div>
         <div class="item item-3">3</div>
