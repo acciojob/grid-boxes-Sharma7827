@@ -1,23 +1,92 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-Boxes</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 200px 200px 200px 200px 200px;
+            grid-gap: 5px;
+        }
 
-<html>
-  <head>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+        .item{
+            background-color: green;
+            font-size: 2rem;
+            color: white;
+            padding: 10px;
+        }
 
-  <body>
-    <body id="grid">
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
-      <div>5</div>
-      <div>6</div>
-      <div>7</div>
-      <div>8</div>
-      <div>9</div>
-      <div>10</div>
-    </body>
-    <script type="text/javascript" src="./script.js"></script>
-  </body>
+        .item-1{
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+        .item-2{
+            grid-row-start: 2;
+            grid-row-end: 6;
+        }
+
+        .item-3{
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        .item-4{
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+
+        .item-5{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        .item-6{
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+
+        .item-7{
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        .item-8{
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+
+        .item-9{
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+
+        .item-10{
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+        <div class="item item-6">6</div>
+        <div class="item item-7">7</div>
+        <div class="item item-8">8</div>
+        <div class="item item-9">9</div>
+        <div class="item item-10">10</div>
+    </div>
+</body>
 </html>
